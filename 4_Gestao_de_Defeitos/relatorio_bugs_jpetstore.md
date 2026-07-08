@@ -1,128 +1,88 @@
-# Bug Reports: JPetStore Web Application
+# Extended Bug Reports: JPetStore Web Application
 
-**Context:** This document presents the identification and registration of 5 functional defects found during exploratory testing on the JPetStore web application. The objective of this task was to map behavioral flaws in the system and document them, ensuring traceability and clarity for the engineering team.
-
----
-
-## 1. Mismatched Image on Search Results
-* **ID:** PS-0001
-* **Severity:** Medium
-* **Module:** Search / Catalog
-
-**Description:**
-The system returns an incorrect image associated with a different breed when a specific search query is executed, despite displaying the correct text description.
-
-**Steps to Reproduce:**
-1. Access the JPetStore application.
-2. Navigate to the search bar.
-3. Enter the query 'Bulldog' and submit.
-4. Observe the search results displayed.
-
-**Expected Result:**
-The search results should display images corresponding to the 'Bulldog' breed.
-
-**Actual Result:**
-A Chihuahua image appears in the search results instead of a Bulldog. The text description remains correct.
-
-**Evidence:**
-[Screenshot Attachment](https://ibb.co/MDx4pN5f)
+**Context:** This document contains a detailed bug report for the JPetStore web application. This documentation includes extended parameters such as preconditions, priority levels, and environment specifics to fully comply with standard QA reporting metrics.
 
 ---
 
-## 2. Purchase Allowed for Out-of-Stock Products
-* **ID:** PS-0002
-* **Severity:** High
-* **Module:** Shopping Cart / Checkout
+## 1. Out-of-Stock Product Purchase Allowed
+* **ID:** PS-001
+* **Severity:** Critical
+* **Priority:** High
+* **Environment:** macOS 14 (Sonoma) | Chrome (latest) | App Version: Demo
 
 **Description:**
-The system lacks inventory validation during the checkout process, allowing users to proceed with purchasing items that are not currently available in stock.
+The system permits users to complete a checkout process for items that are currently out of stock.
+
+**Preconditions:**
+* An out-of-stock product is added to the shopping cart.
 
 **Steps to Reproduce:**
 1. Access the JPetStore application.
-2. Navigate to the catalog and select an item that is out of stock.
-3. Add the item to the shopping cart.
-4. Proceed to checkout and finish the purchase.
+2. Add an out-of-stock product to the shopping cart.
+3. Observe the stock availability status.
+4. Proceed to checkout and complete the transaction.
 
 **Expected Result:**
-The system should prevent the purchase and display an error or warning message indicating the item is out of stock.
+The system should block the transaction and display an error message stating the inability to finish the purchase due to item unavailability.
 
 **Actual Result:**
-The product is not in stock, yet the system allows the user to finish the purchase successfully.
+The purchase is successfully finished despite the lack of inventory.
 
 **Evidence:**
-[Screenshot Attachment](https://ibb.co/3y6sLGC6)
+* [Video Attachment](https://drive.google.com/file/d/1FNEswKcjFIv8rRo4ljJVNY5DU83gGtF4/view?usp=sharing)
 
 ---
 
-## 3. Password Field Retains Data After Sign Out
-* **ID:** PS-0003
-* **Severity:** High
-* **Module:** Authentication
+## 2. Mismatched Breed Image on Search Results
+* **ID:** PS-002
+* **Severity:** Minor
+* **Priority:** Medium
+* **Environment:** macOS 14 (Sonoma) | Chrome (latest) | App Version: Demo
 
 **Description:**
-The authentication system fails to clear sensitive user data from the sign-in form after the user has terminated their session.
+When searching for a specific breed, the search results display a correct text description but an incorrect corresponding image.
+
+**Preconditions:**
+* Access to the JPetStore application search functionality.
 
 **Steps to Reproduce:**
-1. Access the JPetStore application.
-2. Sign in with valid credentials.
-3. Click the 'Sign Out' button.
-4. Navigate back to the sign-in page.
+1. Access the application.
+2. Enter 'Bulldog' into the search tab and submit.
+3. Observe the returned search results.
 
 **Expected Result:**
-The username and password fields should be completely cleared upon signing out for security purposes.
+A Bulldog image should appear alongside the Bulldog's description.
 
 **Actual Result:**
-The password field remains filled with the user's credentials after signing out and returning to the sign-in page.
+A Chihuahua image appears above the Bulldog's description.
 
 **Evidence:**
-[Screenshot Attachment](https://ibb.co/gFT9STqZ)
+* [Screenshot Attachment](https://ibb.co/QFJyMv50)
 
 ---
 
-## 4. Missing Validation for Maximum Purchase Quantity
-* **ID:** PS-0004
-* **Severity:** Medium
-* **Module:** Shopping Cart
+## 3. Search Failure with Punctuation Marks
+* **ID:** PS-003
+* **Severity:** Minor
+* **Priority:** Low
+* **Environment:** macOS 14 (Sonoma) | Chrome (latest) | App Version: Demo
 
 **Description:**
-The application does not impose logical limits on the quantity of a single item that can be purchased, allowing unrealistic inventory requests.
+The search functionality fails to return results when punctuation marks are included in the search query.
+
+**Preconditions:**
+* Access to the JPetStore application search functionality.
 
 **Steps to Reproduce:**
-1. Access the JPetStore application.
-2. Add a product (e.g., female chihuahua) to the shopping cart.
-3. Change the quantity input to 1000 units.
-4. Proceed to checkout and complete the purchase.
+1. Access the application.
+2. Enter 'poodle.' (with a period) into the search tab and submit.
+3. Observe the returned search results.
 
 **Expected Result:**
-The system should restrict the maximum quantity to a reasonable limit or validate the request against the actual available inventory.
+The search engine should sanitize the input and return catalog results for 'poodle'.
 
 **Actual Result:**
-The application allows the user to successfully purchase 1000 units of the product without triggering any validation errors.
+The search query returns no results.
 
 **Evidence:**
-[Screenshot Attachment](https://ibb.co/sv2ymvz8)
-
----
-
-## 5. Search Functionality Fails with Punctuation
-* **ID:** PS-0005
-* **Severity:** Low
-* **Module:** Search
-
-**Description:**
-The search engine does not correctly parse or sanitize inputs containing punctuation marks, resulting in a failure to return relevant catalog items.
-
-**Steps to Reproduce:**
-1. Access the JPetStore application.
-2. Navigate to the search bar.
-3. Enter the query 'poodle.' (including the period at the end).
-4. Submit the search query.
-
-**Expected Result:**
-The system should sanitize the input (ignoring the period) and return search results for 'poodle'.
-
-**Actual Result:**
-The search does not return any results due to the included punctuation.
-
-**Evidence:**
-[Screenshot Attachment](https://ibb.co/svr9P12b)
+* [Screenshot Attachment](https://ibb.co/7J3gyqvF)
