@@ -29,6 +29,7 @@ Organizei os documentos seguindo o fluxo natural de um ciclo de desenvolvimento 
 * **`/3_Casos_de_Teste`**: Suítes de testes funcionais estruturadas (Test Cases) e listas de verificação (Checklists) ágeis.
 * **`/4_Gestao_de_Defeitos`**: Relatórios de bugs detalhados, com rastreabilidade de ambiente e evidências claras.
 * **`/5_Relatorios_e_Metricas`**: Relatórios de execução final sumarizando a qualidade da entrega (Test Summary Report).
+* **`/6_Ferramentas_de_Gestao`**: Demonstração visual de fluxos de trabalho e gestão de testes utilizando Jira (Kanban/Bug Tracking) e TestRail.
 
 *(Nota: As documentações técnicas dentro das pastas foram desenvolvidas originalmente em inglês para alinhamento com o padrão da indústria).*
 
@@ -59,5 +60,6 @@ I organized the documents following the natural flow of a software development l
 * **`/3_Casos_de_Teste`**: Structured functional test suites and agile checklists.
 * **`/4_Gestao_de_Defeitos`**: Detailed bug reports featuring environment traceability and clear visual evidence.
 * **`/5_Relatorios_e_Metricas`**: Final execution reports summarizing delivery quality (Test Summary Report).
+* **`/6_Ferramentas_de_Gestao`**: Visual showcase of workflows and test management utilizing Jira (Kanban/Bug Tracking) and TestRail.
 
 *(Note: The technical documentation inside the folders is written in English to align with industry standards).*
