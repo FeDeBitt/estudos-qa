@@ -36,7 +36,6 @@ To demonstrate the level of detail documented inside each Jira issue, below are 
 *(Below is the internal view of the Jira ticket demonstrating the reporting structure)*
 
 ![Jira Ticket CON1-4 Detail](imagens/bug_4.jpeg)
-
 **Text Transcription:**
 > **Description:**
 > During the registration process on the Sign Up page, the required "Confirm Password" field is completely missing from the user interface. This prevents the user from verifying their typed password, which violates the security requirements established in the PRD.
@@ -61,7 +60,6 @@ To demonstrate the level of detail documented inside each Jira issue, below are 
 *(Below is the internal view of the Jira ticket demonstrating the reporting structure)*
 
 ![Jira Ticket CON1-11 Detail](imagens/bug_11.jpeg)
-
 **Text Transcription:**
 > **Description:**
 > When a user successfully creates a new account using valid credentials, the system authenticates the user but fails to redirect them to the "Finish Registration" page as specified by the application's flow.
