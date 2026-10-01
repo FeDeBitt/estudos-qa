@@ -10,12 +10,20 @@
 
 #### 1.1.1 Features to be Tested
 
+*Modules are based on the [Conduit site decomposition](../1_Requisitos_e_Decomposicao/decomposicao_conduit.md).*
+
 | Module Name | Login State | Description |
 |:---|:---|:---|
 | **Conduit Logo** | Logged In / Logged Out | Situated on all pages. Clicking on it redirects to the home page. |
 | **Home** | Logged In / Logged Out | The home link is situated on all pages. Clicking redirects to the home page. |
 | **Sign In** | Logged Out | Situated on all pages. Clicking opens the sign-in page. |
 | **Sign Up** | Logged Out | Situated on all pages. Clicking opens the sign-up page. |
+| **Your Feed** | Logged In | Displays articles from followed users, with author profile link, like button, article info, and tags. |
+| **Global Feed** | Logged In | Displays articles from all users, with author profile link, like button, article info, and tags. |
+| **New Article** | Logged In | Form to publish an article with title, description, Markdown body, and tags. |
+| **Article Page** | Logged In | Displays the article content and tags, author info, Follow and Favorite buttons, and the comments section. |
+| **User Profile** | Logged In | Displays the user's bio, their own posts, and favorited posts, with a button to edit profile settings. |
+| **Settings** | Logged In | Allows updating profile picture URL, username, bio, email, and password, and logging out. |
 
 #### 1.1.2 Out of Test Scope
 The following areas are excluded from this specific testing cycle:
@@ -50,7 +58,7 @@ The Conduit website will be evaluated using the following testing types:
 
 #### 1.4.2 Entry Criteria
 Testing activities will commence only after:
-1. The Decomposition Tree and Decision Tables are approved.
+1. The Decomposition Tree is approved.
 2. All Test Cases are finalized and have passed peer review.
 3. The Test Environment URL is verified as stable and accessible.
 4. Test Data (user accounts and sample articles) is prepared and seeded.
@@ -94,7 +102,7 @@ Test execution will conclude no later than the last day of the sprint, provided 
 
 | Resource | Description of Tasks |
 |:---|:---|
-| **QA Members** | Develop test documentation (decision tables, cases). Execute testing, track defects, and prepare final execution reports. |
+| **QA Members** | Develop test documentation (decomposition, test cases). Execute testing, track defects, and prepare final execution reports. |
 | **Mentors** | Review and approve test plans/cases. Provide guidance on edge cases and assist in bug prioritization meetings. |
 
 ---
@@ -111,7 +119,7 @@ Testing will be conducted simulating a production-like environment. Local applic
 | Task | Assignee | Estimated Effort |
 |:---|:---|:---|
 | Create Test Plan | QA Members | 3 person-hours |
-| Create Decomposition & Decision Tables | Felipe Buss | 8 person-hours |
+| Create Decomposition Tree | Felipe Buss | 8 person-hours |
 | Create Test Cases | Felipe Buss | 10 person-hours |
 | Review Test Cases | Mentors | 3 person-hours |
 | Test Case Execution | Felipe Buss | 10 person-hours |
@@ -123,7 +131,7 @@ Testing will be conducted simulating a production-like environment. Local applic
 | Task | Sprint 1 | Sprint 2 | Sprint 3 |
 |:---|:---:|:---:|:---:|
 | Create Test Plan | **[ X ]** | | |
-| Create decomposition & decision tables | **[ X ]** | | |
+| Create decomposition tree | **[ X ]** | | |
 | Create Test Cases | | **[ X ]** | |
 | Review Test Cases | | **[ X ]** | |
 | Test Case Execution | | | **[ X ]** |
@@ -136,7 +144,7 @@ Testing will be conducted simulating a production-like environment. Local applic
 
 ### 7.1 Before the Testing Phase
 * Finalized Master Test Plan document.
-* Decomposition Tree and Decision Tables.
+* Decomposition Tree.
 * Approved Test Cases and seeded Test Data.
 
 ### 7.2 During the Testing Phase

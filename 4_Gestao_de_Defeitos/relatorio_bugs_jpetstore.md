@@ -5,7 +5,7 @@
 ---
 
 ## 1. Out-of-Stock Product Purchase Allowed
-* **ID:** PS-001
+* **ID:** JPS-001
 * **Severity:** Critical
 * **Priority:** High
 * **Environment:** macOS 14 (Sonoma) | Chrome (latest) | App Version: Demo
@@ -34,7 +34,7 @@ The purchase is successfully finished despite the lack of inventory.
 ---
 
 ## 2. Mismatched Breed Image on Search Results
-* **ID:** PS-002
+* **ID:** JPS-002
 * **Severity:** Minor
 * **Priority:** Medium
 * **Environment:** macOS 14 (Sonoma) | Chrome (latest) | App Version: Demo
@@ -62,7 +62,7 @@ A Chihuahua image appears above the Bulldog's description.
 ---
 
 ## 3. Search Failure with Punctuation Marks
-* **ID:** PS-003
+* **ID:** JPS-003
 * **Severity:** Minor
 * **Priority:** Low
 * **Environment:** macOS 14 (Sonoma) | Chrome (latest) | App Version: Demo

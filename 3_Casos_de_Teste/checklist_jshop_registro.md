@@ -4,7 +4,7 @@
 
 **Test Execution Details:**
 * **Target URL:** `https://jshop.mate.academy/#/register`
-* **Run Date:** 09/04/2026
+* **Run Date:** 2026-04-09
 * **Preconditions:** None
 
 ---

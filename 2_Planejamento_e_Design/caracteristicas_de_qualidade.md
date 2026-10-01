@@ -1,6 +1,8 @@
-# Software Quality Characteristics (ISO/IEC 25010)
+# Software Quality Characteristics (ISO/IEC 9126 Model)
 
 **Context:** This project was developed as a practical exercise to deeply understand the fundamental Software Quality Characteristics. To demonstrate these concepts in a tangible way, I analyzed an everyday object (a pencil) through the lens of software quality standards.
+
+> **Note:** This analysis follows the six characteristics of the **ISO/IEC 9126** quality model. Its successor, **ISO/IEC 25010:2011**, reorganizes them into eight characteristics, splitting Security and Compatibility into characteristics of their own and renaming Functionality to *Functional Suitability* and Efficiency to *Performance Efficiency*.
 
 ## Analyzed Item: Pencil
 A pencil is a portable item used for writing, drawing, or sketching. It looks like a straight and thin stick, filled with graphite or colored clay, typically surrounded by a wooden case. Upon applying pressure against a paper sheet, the core starts wearing down, and the writing or drawing comes to life.

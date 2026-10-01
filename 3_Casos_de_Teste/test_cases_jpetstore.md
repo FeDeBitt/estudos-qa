@@ -33,7 +33,8 @@
 * **Steps to Perform:**
   1. Open the User registration form.
   2. Enter a value containing alphabetic characters and numbers into the User ID field.
-  3. Click the [Save Account Information] button.
+  3. Enter valid data into the rest of the fields.
+  4. Click the [Save Account Information] button.
 * **Expected Result:** Assert a successful registration message is shown and the user is redirected to the main page.
 
 ### PS-TC-004: The New Password field should not accept a value without a number
@@ -101,7 +102,7 @@
   3. Click the [Login] button.
 * **Expected Result:** Assert an error message indicating that the username and password fields must not be blank is shown.
 
-### PS-TC-011: Username field must accept User ID values given during registration
+### PS-TC-011: Login should be rejected for a Username that was not previously registered
 * **Priority:** Critical | **Status:** Passed
 * **Steps to Perform:**
   1. Open the sign-in page.
